@@ -107,23 +107,22 @@ a {
 
 .work-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px
 }
 
 .work-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .item {
+    max-width: 100%;
     padding-top: 1rem;
-}
-
-.item-title-horz {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .item-sub {
