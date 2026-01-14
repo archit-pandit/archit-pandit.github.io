@@ -41,8 +41,8 @@ a {
 .navbar {
     padding: 2rem 6rem 2.5rem 6rem;
 
-    background-image: url("/assets/sqiggy-bg-nogap.svg");
-    background-position: bottom;
+    background-image: url("/assets/sqiggy-bg-aligned.svg");
+    background-position: bottom left;
     background-repeat: repeat-x;
     animation: sqiggly-shift 45s linear infinite;
 
