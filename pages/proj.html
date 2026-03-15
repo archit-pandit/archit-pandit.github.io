@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work</title>
-    <link rel="stylesheet" href="/styles/style.css"/>
+    <title>Projects — Archit Pandit</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="stylesheet" href="../styles/proj.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
 
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -17,11 +18,270 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="nav-container">
+        <div class="nav-inner">
+            <span class="nav-bracket mono">[ </span>
             <ul class="nav-menu">
-                <li><a href="/index.html" class="nav-link colour-switch-link">ARCHIT PANDIT</a></li>
+                <li><a href="../index.html#contact" class="nav-link colour-switch-link mono">CONTACT</a></li>
+                <li><a href="../index.html" class="nav-link nav-home colour-switch-link">ARCHIT PANDIT</a></li>
+                <li><a href="proj.html" class="nav-link colour-switch-link mono nav-active">PROJECTS</a></li>
             </ul>
+            <span class="nav-bracket mono"> ]</span>
         </div>
     </nav>
+
+    <main class="proj-main">
+
+        <!-- ─── PAGE HEADER ───────────────────────────── -->
+        <header class="proj-header margin-content">
+            <p class="hero-path mono">~/archit/projects</p>
+            <h1 class="proj-title">All <span class="focus-text">Projects</span><span class="cursor">_</span></h1>
+            <p class="proj-subtitle mono">
+                <span class="stat-val">5</span> projects &nbsp;·&nbsp;
+                <span class="stat-val">3</span> shipped &nbsp;·&nbsp;
+                <span class="stat-val">2</span> in progress
+            </p>
+        </header>
+
+        <!-- ─── FILTER BAR ─────────────────────────────── -->
+        <div class="filter-bar margin-content">
+            <span class="mono filter-label">filter:</span>
+            <div class="filter-pills">
+                <button class="pill pill-active mono" data-filter="all">ALL</button>
+                <button class="pill mono" data-filter="shipped">SHIPPED</button>
+                <button class="pill mono" data-filter="wip">IN PROGRESS</button>
+                <button class="pill mono" data-filter="unreal">UNREAL</button>
+                <button class="pill mono" data-filter="unity">UNITY</button>
+                <button class="pill mono" data-filter="systems">SYSTEMS</button>
+            </div>
+        </div>
+
+        <div class="section-divider margin-content">
+            <span class="mono">── ◆ ──────────────────────────────────────────── ◆ ──</span>
+        </div>
+
+        <!-- ─── SHIPPED PROJECTS ───────────────────────── -->
+        <section class="proj-section margin-content" id="shipped">
+            <div class="section-header">
+                <span class="section-num mono">01</span>
+                <h2 class="section-title"><span class="focus-text">S</span>hipped</h2>
+                <span class="section-tag mono">[ COMPLETED ]</span>
+            </div>
+
+            <!-- OBJECTIVE V — featured / large card -->
+            <article class="proj-card proj-card--featured" data-tags="shipped unreal">
+                <div class="proj-card-img-wrap">
+                    <img class="proj-card-img" src="/assets/proj-thumbnail/objV.png" alt="Objective V">
+                    <div class="proj-card-img-overlay mono">VIEW PROJECT →</div>
+                    <span class="proj-card-badge mono">FEATURED</span>
+                </div>
+                <div class="proj-card-body">
+                    <div class="proj-card-top">
+                        <div>
+                            <h2 class="proj-card-title">Objective V</h2>
+                            <p class="proj-card-sub mono">Solo Dev &nbsp;·&nbsp; Jan 2021 – Dec 2025</p>
+                        </div>
+                        <div class="proj-card-tags">
+                            <span class="tag mono">Unreal Engine</span>
+                            <span class="tag mono">C++</span>
+                            <span class="tag mono">Replication</span>
+                        </div>
+                    </div>
+                    <p class="proj-card-desc">
+                        A multiplayer game built entirely solo in Unreal Engine, featuring a custom replication system and networked gameplay. A four-year journey from concept to finished product.
+                    </p>
+                    <div class="proj-card-footer">
+                        <div class="proj-meta-row">
+                            <span class="proj-meta mono"><span class="proj-meta-label">engine</span> Unreal Engine 5</span>
+                            <span class="proj-meta mono"><span class="proj-meta-label">lang</span> C++</span>
+                            <span class="proj-meta mono"><span class="proj-meta-label">status</span> <span class="status-shipped">shipped</span></span>
+                        </div>
+                        <a href="#" class="proj-link mono colour-switch-link">Explore ↗</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- COURT JUSTICE + ONCE ALIVE — side by side -->
+            <div class="proj-pair">
+                <article class="proj-card proj-card--half" data-tags="shipped unity">
+                    <div class="proj-card-img-wrap">
+                        <img class="proj-card-img" src="/assets/proj-thumbnail/court-justice.png" alt="Court Justice">
+                        <div class="proj-card-img-overlay mono">VIEW →</div>
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-top">
+                            <div>
+                                <h2 class="proj-card-title">Court Justice</h2>
+                                <p class="proj-card-sub mono">Solo Dev &nbsp;·&nbsp; 2021 – 2025</p>
+                            </div>
+                            <div class="proj-card-tags">
+                                <span class="tag mono">Unity</span>
+                                <span class="tag mono">C#</span>
+                            </div>
+                        </div>
+                        <p class="proj-card-desc">
+                            A Unity game built around courtroom mechanics and procedural case generation. Developed solo from concept to release.
+                        </p>
+                        <div class="proj-card-footer">
+                            <div class="proj-meta-row">
+                                <span class="proj-meta mono"><span class="proj-meta-label">engine</span> Unity</span>
+                                <span class="proj-meta mono"><span class="proj-meta-label">status</span> <span class="status-shipped">shipped</span></span>
+                            </div>
+                            <a href="#" class="proj-link mono colour-switch-link">Explore ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card proj-card--half" data-tags="shipped unreal">
+                    <div class="proj-card-img-wrap">
+                        <img class="proj-card-img" src="/assets/proj-thumbnail/once-alive.png" alt="Once Alive">
+                        <div class="proj-card-img-overlay mono">VIEW →</div>
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-top">
+                            <div>
+                                <h2 class="proj-card-title">Once Alive</h2>
+                                <p class="proj-card-sub mono">Solo Dev &nbsp;·&nbsp; 2021 – 2025</p>
+                            </div>
+                            <div class="proj-card-tags">
+                                <span class="tag mono">Unreal Engine</span>
+                                <span class="tag mono">Blueprints</span>
+                            </div>
+                        </div>
+                        <p class="proj-card-desc">
+                            An Unreal Engine project built entirely in Blueprints — exploring atmosphere, narrative, and environmental storytelling.
+                        </p>
+                        <div class="proj-card-footer">
+                            <div class="proj-meta-row">
+                                <span class="proj-meta mono"><span class="proj-meta-label">engine</span> Unreal Engine</span>
+                                <span class="proj-meta mono"><span class="proj-meta-label">status</span> <span class="status-shipped">shipped</span></span>
+                            </div>
+                            <a href="#" class="proj-link mono colour-switch-link">Explore ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="section-divider margin-content">
+            <span class="mono">── ◆ ──────────────────────────────────────────── ◆ ──</span>
+        </div>
+
+        <!-- ─── IN PROGRESS ────────────────────────────── -->
+        <section class="proj-section margin-content" id="wip">
+            <div class="section-header">
+                <span class="section-num mono">02</span>
+                <h2 class="section-title"><span class="focus-text">I</span>n Progress</h2>
+                <span class="section-tag mono">[ ACTIVE ]</span>
+            </div>
+
+            <div class="wip-list">
+
+                <!-- WINDY ENGINE -->
+                <article class="wip-card" data-tags="wip systems">
+                    <div class="wip-card-left">
+                        <div class="wip-index-col">
+                            <span class="wip-index mono">01</span>
+                            <div class="wip-vline"></div>
+                        </div>
+                        <div class="wip-card-body">
+                            <div class="wip-card-top">
+                                <h2 class="proj-card-title">Windy Engine</h2>
+                                <span class="wip-badge mono">WIP</span>
+                            </div>
+                            <p class="proj-card-desc">
+                                A 2D game engine written from scratch in C, using Vulkan as the rendering backend. Focused on being lightweight, educational, and fully controllable — no black boxes.
+                            </p>
+                            <div class="proj-card-tags wip-tags">
+                                <span class="tag mono">C</span>
+                                <span class="tag mono">Vulkan</span>
+                                <span class="tag mono">Game Engine</span>
+                                <span class="tag mono">Graphics</span>
+                            </div>
+                            <div class="wip-progress-wrap">
+                                <div class="wip-progress-bar">
+                                    <div class="wip-progress-fill" style="width: 35%"></div>
+                                </div>
+                                <span class="mono wip-progress-label">35% — core renderer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="wip-link mono colour-switch-link">↗</a>
+                </article>
+
+                <!-- MIRRORED EDGE -->
+                <article class="wip-card" data-tags="wip unity">
+                    <div class="wip-card-left">
+                        <div class="wip-index-col">
+                            <span class="wip-index mono">02</span>
+                            <div class="wip-vline"></div>
+                        </div>
+                        <div class="wip-card-body">
+                            <div class="wip-card-top">
+                                <h2 class="proj-card-title">Mirrored Edge</h2>
+                                <span class="wip-badge mono">WIP</span>
+                            </div>
+                            <p class="proj-card-desc">
+                                A 2D platformer split between two parallel worlds — what you do in one world affects the other. Built around environmental puzzles and a reflective narrative.
+                            </p>
+                            <div class="proj-card-tags wip-tags">
+                                <span class="tag mono">2D</span>
+                                <span class="tag mono">Platformer</span>
+                                <span class="tag mono">Dual-World</span>
+                            </div>
+                            <div class="wip-progress-wrap">
+                                <div class="wip-progress-bar">
+                                    <div class="wip-progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="mono wip-progress-label">20% — prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="wip-link mono colour-switch-link">↗</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner mono">
+            <span class="footer-left">© 2025 Archit Pandit</span>
+            <span class="footer-sep">────────────</span>
+            <span class="footer-right">all rights reserved</span>
+        </div>
+    </footer>
+
+    <script>
+        // ─── filter pills ───────────────────────────────────
+        const pills   = document.querySelectorAll('.pill');
+        const cards   = document.querySelectorAll('[data-tags]');
+
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => p.classList.remove('pill-active'));
+                pill.classList.add('pill-active');
+
+                const filter = pill.dataset.filter;
+
+                cards.forEach(card => {
+                    const tags = card.dataset.tags.split(' ');
+                    const show = filter === 'all' || tags.includes(filter);
+
+                    if (show) {
+                        card.style.opacity = '1';
+                        card.style.pointerEvents = 'auto';
+                        card.style.filter = '';
+                    } else {
+                        card.style.opacity = '0.18';
+                        card.style.pointerEvents = 'none';
+                        card.style.filter = 'grayscale(1)';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>
